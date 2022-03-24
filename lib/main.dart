@@ -3,6 +3,7 @@ import 'package:flutterando_masterclass_mockup/components/custom_button.dart';
 import 'package:flutterando_masterclass_mockup/components/custom_home_apps_button.dart';
 import 'package:flutterando_masterclass_mockup/components/custom_text_button.dart';
 import 'package:flutterando_masterclass_mockup/modules/first_mockup/first_mockup_page.dart';
+import 'package:flutterando_masterclass_mockup/modules/tinder/tinder_mockup_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,12 +39,21 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
           child: Text('MasterClass 3'),
         ),
       ),
-      body: Column(
+      body: GridView.count(
+        crossAxisCount: 3,
+        scrollDirection: Axis.vertical,
         children: [
           CustomHomeAppsButton(
             icon: 'assets/images/logo.png',
             route: FirstMockup(),
             text: 'First Mockup',
+            textStyle: TextStyle(color: Colors.white, fontSize: 16),
+            sizedBox: SizedBox(height: 10),
+          ),
+          CustomHomeAppsButton(
+            icon: 'assets/images/tinder_logo.png',
+            route: TinderMockupPage(),
+            text: 'Tinder Mockup',
             textStyle: TextStyle(color: Colors.white, fontSize: 16),
             sizedBox: SizedBox(height: 10),
           ),
