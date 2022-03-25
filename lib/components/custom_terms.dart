@@ -14,6 +14,10 @@ class CustomTermsUserTinder extends StatelessWidget {
           text: 'By tapping Create Account or Sign In, you agree to our ',
           children: <TextSpan>[
             TextSpan(
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  print('click');
+                },
               text: 'Terms. ',
               style: TextStyle(
                 decoration: TextDecoration.underline,
@@ -23,7 +27,10 @@ class CustomTermsUserTinder extends StatelessWidget {
               text: 'Learn how we process your data in our ',
             ),
             TextSpan(
-              recognizer: TapGestureRecognizer()..onTap =() {},
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  print('click');
+                },
               text: 'Privacy Policy',
               style: TextStyle(
                 decoration: TextDecoration.underline,
@@ -33,6 +40,10 @@ class CustomTermsUserTinder extends StatelessWidget {
               text: ' and ',
             ),
             TextSpan(
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  print('click');
+                },
               text: 'Cookies Policy',
               style: TextStyle(
                 decoration: TextDecoration.underline,

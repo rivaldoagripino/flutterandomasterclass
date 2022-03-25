@@ -30,7 +30,38 @@ class _TinderMockupPageState extends State<TinderMockupPage> {
             ),
             SizedBox(height: 50),
             CustomTermsUserTinder(),
-            
+            SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Container(
+                height: 50,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/icons/apple_icon.png',
+                        height: 20,
+                      ),
+                      // SizedBox(width: 20),
+                      Text(
+                        'SIGN IN WITH APPLE',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

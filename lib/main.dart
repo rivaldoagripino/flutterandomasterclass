@@ -57,6 +57,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
             textStyle: TextStyle(color: Colors.white, fontSize: 16),
             sizedBox: SizedBox(height: 10),
           ),
+          
         ],
       ),
     );
