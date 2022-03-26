@@ -3,6 +3,7 @@ import 'package:flutterando_masterclass_mockup/components/custom_button.dart';
 import 'package:flutterando_masterclass_mockup/components/custom_home_apps_button.dart';
 import 'package:flutterando_masterclass_mockup/components/custom_text_button.dart';
 import 'package:flutterando_masterclass_mockup/modules/first_mockup/first_mockup_page.dart';
+import 'package:flutterando_masterclass_mockup/modules/movie_mockup/movie_mockup_page.dart';
 import 'package:flutterando_masterclass_mockup/modules/tinder/tinder_mockup_page.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Projeto 0',
       home: HomeScreenPage(),
+      theme: ThemeData.dark(),
     );
   }
 }
@@ -57,7 +59,13 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
             textStyle: TextStyle(color: Colors.white, fontSize: 16),
             sizedBox: SizedBox(height: 10),
           ),
-          
+          CustomHomeAppsButton(
+            icon: 'assets/images/tinder_logo.png',
+            route: MovieMockupPage(),
+            text: 'Movie Mockup',
+            textStyle: TextStyle(color: Colors.white, fontSize: 16),
+            sizedBox: SizedBox(height: 10),
+          ),
         ],
       ),
     );
