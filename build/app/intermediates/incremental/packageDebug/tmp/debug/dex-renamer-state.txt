@@ -1,4 +1,4 @@
-#Fri Mar 25 16:34:17 BRT 2022
+#Fri Mar 25 23:11:52 BRT 2022
 base.0=/home/tinnova/Documentos/ESTUDO/MASTERCLASS 3/flutterandomasterclass/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
