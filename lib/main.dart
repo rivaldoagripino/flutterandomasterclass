@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_masterclass_mockup/components/custom_button.dart';
 import 'package:flutterando_masterclass_mockup/components/custom_home_apps_button.dart';
-import 'package:flutterando_masterclass_mockup/components/custom_text_button.dart';
 import 'package:flutterando_masterclass_mockup/modules/first_mockup/first_mockup_page.dart';
 import 'package:flutterando_masterclass_mockup/modules/movie_mockup/movie_mockup_page.dart';
 import 'package:flutterando_masterclass_mockup/modules/tinder/tinder_mockup_page.dart';

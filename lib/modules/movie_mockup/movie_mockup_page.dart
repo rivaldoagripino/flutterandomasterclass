@@ -10,8 +10,7 @@ class MovieMockupPage extends StatefulWidget {
 class _MovieMockupPageState extends State<MovieMockupPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  PageController _pageController = PageController();
-  var n = 0;
+  final PageController _pageController = PageController();
   bool isLoading = true;
 
   Future<void> setLoading() async {
@@ -67,7 +66,7 @@ class _MovieMockupPageState extends State<MovieMockupPage>
             tabs: [
               Tab(text: 'New'),
               Tab(text: 'Popular'),
-              Tab(text: 'Genres'),
+              Tab(text: 'Romance'),
               Tab(text: 'Animations'),
               Tab(text: 'Action'),
               Tab(text: 'Documentation'),
