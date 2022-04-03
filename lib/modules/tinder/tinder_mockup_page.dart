@@ -16,9 +16,20 @@ class _TinderMockupPageState extends State<TinderMockupPage> {
         return true;
       },
       child: Scaffold(
-        backgroundColor: Color.fromARGB(235, 185, 95, 145),
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.keyboard_arrow_left_sharp,
+              size: 35,
+            ),
+          ),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
+        backgroundColor: Color.fromARGB(255, 224, 77, 163),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -28,11 +39,11 @@ class _TinderMockupPageState extends State<TinderMockupPage> {
                 Image.asset('assets/images/text_tinder_logo.png', height: 40),
               ],
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 110),
             CustomTermsUserTinder(),
-            SizedBox(height: 30),
+            SizedBox(height: 40),
             Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.only(bottom: 15, left: 15, right: 15),
               child: Container(
                 height: 50,
                 width: double.infinity,
@@ -43,25 +54,101 @@ class _TinderMockupPageState extends State<TinderMockupPage> {
                   ),
                 ),
                 child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        'assets/icons/apple_icon.png',
-                        height: 20,
-                      ),
-                      // SizedBox(width: 20),
-                      Text(
-                        'SIGN IN WITH APPLE',
-                        style: TextStyle(
-                          color: Colors.white,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'assets/icons/apple_icon.png',
+                          height: 20,
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          width: 80,
+                        ),
+                        Text(
+                          'SIGN IN WITH APPLE',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 15, left: 15, right: 15),
+              child: Container(
+                height: 50,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'assets/icons/facebook.png',
+                          height: 20,
+                        ),
+                        SizedBox(width: 70),
+                        Text(
+                          'SIGN IN WITH FACEBOOK',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 15, left: 15, right: 15),
+              child: Container(
+                height: 50,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'assets/icons/sms.png',
+                          height: 20,
+                        ),
+                        SizedBox(width: 50),
+                        Text(
+                          'SIGN IN WITH PHONE NUMBER',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+            Text(
+              'Trouble Signing In?',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            ),
+            SizedBox(height: 40),
           ],
         ),
       ),

@@ -58,7 +58,7 @@ class _HomeScreenPageState extends State<HomeScreenPage> {
             sizedBox: SizedBox(height: 10),
           ),
           CustomHomeAppsButton(
-            icon: 'assets/images/tinder_logo.png',
+            icon: 'assets/images/logo_movie.png',
             route: MovieMockupPage(),
             text: 'Movie Mockup',
             textStyle: TextStyle(color: Colors.white, fontSize: 16),
